@@ -15,3 +15,11 @@ export PATH="$HOME/bin:$PATH"
 
 export FLYCTL_INSTALL="/root/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+GOV=$(asdf where golang)
+export GOROOT=$GOV/go
+export GOPATH=~/go
+export GOBIN=$GOV/go/bin
+export PATH=$GOBIN:$PATH
+
+. ~/.asdf/plugins/java/set-java-home.zsh
